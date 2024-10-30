@@ -1,0 +1,16 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name proxy.com; # Nombre del dominio
+
+    root /var/www/html/proxy.com; # Ruta de la carpeta raíz del dominio
+    #root /var/www/html; # Ruta de la carpeta raíz del dominio
+    index index.html; # Archivo por defecto
+
+    # Configuración para la raíz
+    location / {
+        try_files $uri $uri/ /index.html; # Intenta servir el archivo solicitado, si no existe, sirve
+    }
+
+}
