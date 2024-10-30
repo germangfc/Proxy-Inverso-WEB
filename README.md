@@ -1,4 +1,4 @@
-### Despliegue Proxy Inverso con Nginx
+# Despliegue Proxy Inverso con Nginx
 ## Objetivo
 El objetivo requerido es la creación de un proxy inverso apoyándonos en un servidor Nginx dentro de un contenedor Docker.  
 
